@@ -24,8 +24,10 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@rei/cdr-tokens": "^11.0.1",
     "@types/node": "^20.2.5",
     "@vitejs/plugin-vue": "^4.1.0",
+    "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-dts": "^2.3.0",

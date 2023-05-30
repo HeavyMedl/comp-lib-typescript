@@ -1,2 +1,2 @@
-export { default as FooComponent } from "./components/FooComponent.vue";
-export { default as BarComponent } from "./components/BarComponent.vue";
+export { default as CdrText } from "./components/CdrText.vue";
+export { default as CdrContainer } from "./components/CdrContainer.vue";

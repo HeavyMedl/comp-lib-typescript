@@ -1,7 +1,9 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import path from 'path';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
+const stylePath = path.resolve(__dirname, './src/style');
 
 export default defineConfig({
   build: {
@@ -28,7 +30,14 @@ export default defineConfig({
   plugins: [
     vue(),
     dts({
-      insertTypesEntry: true
+      insertTypesEntry: true,
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "${stylePath}/_index.scss";`,
+      },
+    },
+  },
 });
